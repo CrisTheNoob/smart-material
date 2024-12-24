@@ -58,7 +58,7 @@ session_destroy();
     <script>
         // Simulate a delay for the logout process
         setTimeout(() => {
-            window.location.href = "../routes/signin.php"; // Redirect to the login page
+            window.location.href = "../index.php"; // Redirect to the login page
         }, 2000); // 2-second delay
     </script>
 </body>

@@ -85,44 +85,22 @@ if (!isset($_SESSION['user_id'])) {
 
     <!-- Main Content -->
     <div class="content">
-    <div class="container mt-4">
-        <h1 class="text-center mb-4">Overview</h1>
-        <div class="row">
-            <!-- Example Box 1 -->
-            <div class="col-md-4">
-                <div class="box">
-                    <div class="box-title">MRF0001</div>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="percent">75%</div>
-                    <button class="btn btn-primary mt-3">Unlock</button>
-                </div>
+        <h1>Registration</h1>
+        <form action="controllers/register_mrf.php" method="POST" class="mt-4">
+            <div class="mb-3">
+                <label for="mrf-number" class="form-label">MRF Number</label>
+                <input type="text" class="form-control" id="mrf-number" name="mrf_number" placeholder="Enter MRF Number" required>
             </div>
-            <!-- Example Box 2 -->
-            <div class="col-md-4">
-                <div class="box">
-                    <div class="box-title">MRF0002</div>
-                    <div class="progress">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="percent">60%</div>
-                    <button class="btn btn-primary mt-3">Unlock</button>
-                </div>
+            <div class="mb-3">
+                <label for="mrf-address" class="form-label">MRF Address</label>
+                <textarea class="form-control" id="mrf-address" name="mrf_address" placeholder="Enter MRF Address" rows="3" required></textarea>
             </div>
-            <!-- Example Box 3 -->
-            <div class="col-md-4">
-                <div class="box">
-                    <div class="box-title">MRF0003</div>
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="percent">45%</div>
-                    <button class="btn btn-primary mt-3">Unlock</button>
-                </div>
+            <div class="mb-3">
+                <label for="contact-number" class="form-label">Contact Number</label>
+                <input type="tel" class="form-control" id="contact-number" name="contact_number" placeholder="Enter Contact Number" required>
             </div>
-        </div>
-    </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
     </div>
 
     <!-- Bootstrap JS -->

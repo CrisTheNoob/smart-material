@@ -24,33 +24,19 @@ if (!isset($_SESSION['user_id'])) {
         .sidebar {
             height: 100vh;
             width: 250px;
-            background: linear-gradient(to bottom, #56ab2f, #a8e063);
+            background: #343a40;
             color: white;
             position: fixed;
             padding-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .sidebar h4 {
-            margin-bottom: 30px;
-            font-size: 1.5rem;
-            font-weight: bold;
         }
         .sidebar a {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            margin-bottom: 10px;
-            width: 80%;
-            text-align: center;
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.2);
-            transition: background 0.3s ease;
+            display: block;
         }
         .sidebar a:hover {
-            background: rgba(255, 255, 255, 0.4);
+            background: #495057;
         }
         .content {
             margin-left: 250px;
@@ -91,7 +77,7 @@ if (!isset($_SESSION['user_id'])) {
             <!-- Example Box 1 -->
             <div class="col-md-4">
                 <div class="box">
-                    <div class="box-title">MRF0001</div>
+                    <div class="box-title">Recycling Rate</div>
                     <div class="progress">
                         <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -102,7 +88,7 @@ if (!isset($_SESSION['user_id'])) {
             <!-- Example Box 2 -->
             <div class="col-md-4">
                 <div class="box">
-                    <div class="box-title">MRF0002</div>
+                    <div class="box-title">Waste Reduction</div>
                     <div class="progress">
                         <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -113,7 +99,7 @@ if (!isset($_SESSION['user_id'])) {
             <!-- Example Box 3 -->
             <div class="col-md-4">
                 <div class="box">
-                    <div class="box-title">MRF0003</div>
+                    <div class="box-title">Energy Recovery</div>
                     <div class="progress">
                         <div class="progress-bar bg-warning" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
