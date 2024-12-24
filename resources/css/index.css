@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(to bottom, #a8e063, #56ab2f);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.header-description {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn-custom {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+}
+.btn-custom:hover {
+    transform: scale(1.1);
+}
